@@ -1,0 +1,331 @@
+/*
+RMIT University Vietnam
+Course: COSC3058 Web Programming Bootcamp
+Semester: 2024A
+Assessment: Fundamental Programming Challenge
+Author: Your names (e.g. Nguyen Van Minh)
+ID: Your student ids (e.g. s1234567)
+Acknowledgement: Acknowledge the resources that you use here.
+*/
+
+/* ------------------------- */
+/* YOUR CSS WORK STARTS HERE */
+/* ------------------------- */
+
+:root {
+    --primary: #3ede9b;
+    --secondary: #3ac8fa;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+a {
+    font-size: 14px;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    /* header style */
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 20px;
+    }
+
+    .title-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .title-container h1 {
+        font-weight: 500;
+    }
+
+    .title-container h1 span {
+        color: var(--secondary);
+    }
+
+    img[alt=logo] {
+        border-radius: 100px;
+    }
+
+
+    /* main container style */
+    main {
+        border: 2px solid #ddd;
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    img[alt=profile] {
+        border-radius: 100px;
+        border: 2px solid var(--primary);
+    }
+
+    /* profile style */
+    #profile {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border-right: 2px solid #ddd;
+    }
+
+    .first {
+        width: 100%;
+        font-size: 16px;
+        text-align: start;
+        color: #a8a8a8;
+        margin-top: 24px;
+    }
+
+    .second {
+        width: 100%;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 400;
+    }
+
+    .third {
+        width: 100%;
+        text-align: end;
+        font-size: 16px;
+        color: var(--primary);
+    }
+
+
+    .second span {
+        color: var(--primary);
+    }
+
+    .sid,
+    .email {
+        width: 100%;
+        font-size: 16px;
+        text-align: start;
+        color: #a8a8a8;
+    }
+
+    .sid {
+        margin-top: 24px;
+    }
+
+
+    /* album style */
+    #album {
+        flex: 3;
+        padding: 20px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border: 2px solid #ddd;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    .card .description {
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+    }
+
+    .card .description h2 {
+        color: var(--primary);
+        width: 100%;
+        text-align: start;
+        font-weight: 500;
+    }
+
+    .card .description a {
+        color: var(--primary);
+        width: 100%;
+        text-align: end;
+    }
+
+    .second-cards-layout {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .third-cards-layout {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    /* header style */
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 20px;
+    }
+
+    main {
+        border: 'none';
+    }
+
+
+    .title-container h1 {
+        font-weight: 500;
+    }
+
+    .title-container h1 span {
+        color: var(--secondary);
+    }
+
+    img[alt=logo] {
+        border-radius: 100px;
+    }
+
+    /* main container style */
+    main {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img[alt=profile] {
+        border-radius: 100px;
+        border: 2px solid var(--primary);
+    }
+
+    /* profile style */
+
+    #profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .first {
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+        color: #a8a8a8;
+        margin-top: 24px;
+    }
+
+    .second {
+        width: 100%;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 400;
+    }
+
+    .third {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        color: var(--primary);
+    }
+
+
+    .second span {
+        color: var(--primary);
+    }
+
+    .sid,
+    .email {
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+        color: #a8a8a8;
+    }
+
+    .sid {
+        margin-top: 24px;
+    }
+
+
+    /* album style */
+    #album {
+        padding: 20px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border: 2px solid #ddd;
+        margin-top: 24px;
+    }
+
+    .card img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .card .description {
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+    }
+
+    .card .description h2 {
+        color: var(--primary);
+        width: 100%;
+        text-align: start;
+        font-weight: 500;
+    }
+
+    .card .description a {
+        color: var(--primary);
+        width: 100%;
+        text-align: end;
+    }
+
+    .second-cards-layout {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .third-cards-layout {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* footer */
+footer {
+    font-size: 12px;
+    text-align: center;
+    color: #a8a8a8;
+    margin-bottom: 16px;
+}
+
+footer span {
+    font-weight: 500;
+    color: #333;
+}

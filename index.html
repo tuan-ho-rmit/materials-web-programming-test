@@ -1,0 +1,115 @@
+<!--
+RMIT University Vietnam
+Course: COSC3058 Web Programming Bootcamp
+Semester: 2024A
+Assessment: Fundamental Programming Challenge
+Author: Ho Tuan
+ID: s4019549
+Acknowledgement: Acknowledge the resources that you use here.
+-->
+
+<!--
+  YOUR HTML WORK STARTS HERE
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuan Ho's Photo Gallery</title>
+  <link rel="icon" type="image/x-icon" href="/assets/logo.png">
+
+  <!-- Import google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Including CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <img src="assets/logo.png" alt="logo" width="64px" height="64px">
+    </a>
+    <div class="title-container">
+      <h1>My <span> <strong>Photo Gallery</strong></span></h1>
+    </div>
+  </header>
+
+  <main>
+    <div id="profile">
+      <img src="assets/profile.png" alt="profile" width="200px" height="200px">
+      <p class="first">Hi, I'm</p>
+      <p class="second"><span>Tuan</span> Ho</p>
+      <p class="third">Software Developer</p>
+      <p class="sid"><i>S4019549</i></p>
+      <p class="email"><i>S4019549@rmit.edu.vn</i></p>
+    </div>
+
+    <div id="album">
+      <div class="card" id="card1">
+        <img src="assets/nature-1.jpg" alt="image1" height="300px">
+        <div class="description">
+          <h2>Nature 1</h2>
+          <a href="#"><i>See more...</i></a>
+        </div>
+      </div>
+
+      <div class="second-cards-layout">
+        <div class="card" id="card2">
+          <img src="assets/cake.jpg" alt="image2" height="150px">
+          <div class="description">
+            <h2>Cake</h2>
+            <a href="#"><i>See more...</i></a>
+          </div>
+        </div>
+
+        <div class="card" id="card3">
+          <img src="assets/car.jpg" alt="image3" height="150px">
+          <div class="description">
+            <h2>Car</h2>
+            <a href="#"><i>See more...</i></a>
+          </div>
+        </div>
+
+        <div class="card" id="card4">
+          <img src="assets/portrait.jpg" alt="image4" height="150px">
+          <div class="description">
+            <h2>Portrait</h2>
+            <a href="#"><i>See more...</i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="third-cards-layout">
+        <div class="card" id="card5">
+          <img src="assets/nature-3.jpg" alt="image5" height="300px">
+          <div class="description">
+            <h2>Nature 3</h2>
+            <a href="#"><i>See more...</i></a>
+          </div>
+        </div>
+
+        <div class="card" id="card6">
+          <img src="assets/nature-4.jpg" alt="image6" height="300px">
+          <div class="description">
+            <h2>Nature 4</h2>
+            <a href="#"><i>See more...</i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <footer>
+    Crafted with &#128511; by <span>Tuan Ho</span>
+  </footer>
+
+</body>
+
+</html>
